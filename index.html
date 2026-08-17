@@ -159,7 +159,7 @@ const cmd=handleCommand(question);
 if(cmd!==null){addMessage("JARVIS",cmd);addHistory("JARVIS: "+cmd.substring(0,60));if(voiceEnabled&&!muted)speak(cmd);return;}
 
 if(!GEMINI_API_KEY){if(!askForKey()){addMessage("JARVIS","I need an API key to think. Use the API KEY button in Settings when you're ready.");return;}}
-
+setStatus("THINKING");
 msgCount++;
 document.getElementById("reqCount").textContent=msgCount;
 if(saverMode&&conversationHistory.length>4){conversationHistory=conversationHistory.slice(-4);}
