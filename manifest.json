@@ -1,7 +1,7 @@
 {
   "name": "J.A.R.V.I.S. AI",
   "short_name": "JARVIS",
-  "start_url": "jarvis.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#020509",
   "theme_color": "#00eaff",
